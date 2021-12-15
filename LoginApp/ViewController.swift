@@ -1,10 +1,4 @@
-//
-//  ViewController.swift
-//  LoginApp
-//
-//  Created by Анна Мелехина on 15.12.2021.
-//  Copyright © 2021 Anna Melekhina. All rights reserved.
-//
+
 
 import UIKit
 
@@ -18,7 +12,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         setGradientBackground()
     }
-    
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let inputText = textUser.text, !inputText.isEmpty else {
             showAlert(title: "Error", message: "Wrong name")
@@ -67,7 +61,6 @@ class ViewController: UIViewController {
                    
            self.view.layer.insertSublayer(gradientLayer, at:0)
        }
-    
 }
 
 
