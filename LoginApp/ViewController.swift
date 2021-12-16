@@ -14,10 +14,6 @@ class ViewController: UIViewController {
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let inputText = textUser.text, !inputText.isEmpty else {
-            showAlert(title: "Error", message: "Wrong name")
-            return
-        }
         let hiVC = segue.destination as! HiViewController
         hiVC.name = textUser.text
     }
@@ -28,7 +24,12 @@ class ViewController: UIViewController {
     
     
     @IBAction func LoginButton() {
-        if textUser.text != "Name" && textPass.text != "Password" {
+        guard let inputText = textUser.text, !inputText.isEmpty else {
+            showAlert(title: "Error", message: "Wrong name")
+            return
+        }
+
+        if textUser.text != "Name", textPass.text != "Password" {
             showAlert(title: "Error", message: "Wrong name or pass")
         } else if textUser.text == "Name" && textPass.text == "Password" {
             performSegue(withIdentifier: "Go", sender: nil)
