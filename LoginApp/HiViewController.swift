@@ -12,9 +12,6 @@ class HiViewController: UIViewController {
         hiText.text = "Hi, " + name
     }
     
-    @IBAction func logOutButton() {
-        dismiss(animated: true)
-    }
     
 
 }

@@ -91,7 +91,6 @@
                                 <rect key="frame" x="180" y="350" width="55" height="30"/>
                                 <state key="normal" title="Log Out"/>
                                 <connections>
-                                    <action selector="logOutButton" destination="Pie-YP-ThF" eventType="touchUpInside" id="Gtj-1u-C1U"/>
                                     <segue destination="3Nc-r8-gW0" kind="unwind" unwindAction="unwindFor:" id="xey-bC-aZh"/>
                                 </connections>
                             </button>

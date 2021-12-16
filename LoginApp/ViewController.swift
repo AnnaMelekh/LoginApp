@@ -19,7 +19,8 @@ class ViewController: UIViewController {
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true)
+        super.touchesBegan(touches, with: event)
+        view.endEditing(true)
     }
     
     
@@ -32,7 +33,7 @@ class ViewController: UIViewController {
         if textUser.text != "Name", textPass.text != "Password" {
             showAlert(title: "Error", message: "Wrong name or pass")
         } else if textUser.text == "Name" && textPass.text == "Password" {
-            performSegue(withIdentifier: "Go", sender: nil)
+            
         }
     }
     
