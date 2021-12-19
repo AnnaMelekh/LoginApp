@@ -137,6 +137,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Screen" largeTitleDisplayMode="always" id="LjT-ku-8PZ"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Xg9-LJ-6Mj">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -182,7 +183,7 @@
                                         <rect key="frame" x="138.5" y="185" width="97" height="30"/>
                                         <state key="normal" title="This is my Cat"/>
                                         <connections>
-                                            <segue destination="uBV-dx-Hlc" kind="presentation" id="anq-yC-xT2"/>
+                                            <segue destination="uBV-dx-Hlc" kind="presentation" id="CHv-fC-U57"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -198,6 +199,11 @@
                         <viewLayoutGuide key="safeArea" id="fZD-Na-1CN"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Info" id="jjp-qc-k4N"/>
+                    <connections>
+                        <outlet property="age" destination="AEH-9l-ZlR" id="LzN-cn-ZZC"/>
+                        <outlet property="avatar" destination="i3G-u0-bHY" id="4Mr-UT-UQh"/>
+                        <outlet property="name" destination="3gd-Zy-o46" id="3Cu-ht-sbS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KkI-jF-Pau" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -253,11 +259,10 @@
             </objects>
             <point key="canvasLocation" x="1571" y="781"/>
         </scene>
-        <!--Item-->
+        <!--Name-->
         <scene sceneID="c65-fl-guK">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sYf-zR-OVI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xg4-8m-7bt" sceneMemberID="viewController">
+                <navigationController title="Name" automaticallyAdjustsScrollViewInsets="NO" id="xg4-8m-7bt" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="8ja-M7-zux"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6lx-W9-arT">
@@ -265,10 +270,15 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8yZ-vE-eS1">
+                        <rect key="frame" x="0.0" y="-54" width="0.0" height="0.0"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="Pie-YP-ThF" kind="relationship" relationship="rootViewController" id="Tkb-s7-ps3"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sYf-zR-OVI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1572" y="94"/>
         </scene>

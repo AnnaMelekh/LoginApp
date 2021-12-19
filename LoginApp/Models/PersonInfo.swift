@@ -1,12 +1,12 @@
 import Foundation
 
 struct Person {
-    let photo: Character
+    let photo: String
     let name: String
-    let age: Int
+    let age: String
 }
 
-let anna = Person(photo:"👩🏼", name: "Anna", age: 29)
+let anna = Person(photo:"👩🏼", name: "Anna", age: "29")
     
 
 
