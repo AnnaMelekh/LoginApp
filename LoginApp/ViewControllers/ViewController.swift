@@ -14,16 +14,23 @@ class ViewController: UIViewController {
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let hiVC = segue.destination as! HiViewController
-        hiVC.name = textUser.text
+        let tabBarController = segue.destination as! UITabBarController
+       
+        let viewControllers = tabBarController.viewControllers
+        
+        for viewController in viewControllers! {
+        if let welcomeVC = viewController as? HiViewController {
+            welcomeVC.name = textUser.text ?? ""
+            }
+        }
     }
+            
 
-    
     @IBAction func LoginButton() {
         
-        if textUser.text != "Name", textPass.text != "Password" {
+        if textUser.text != userAnna.name || textPass.text != userAnna.password {
             showAlert(title: "Error", message: "Wrong name or pass")
-        } else if textUser.text == "Name" && textPass.text == "Password" {
+        } else if textUser.text == userAnna.name && textPass.text == userAnna.password {
             
         }
     }
