@@ -14,6 +14,8 @@
 		8D5EC91D276A44F000F36A10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D5EC91C276A44F000F36A10 /* Assets.xcassets */; };
 		8D5EC920276A44F000F36A10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D5EC91E276A44F000F36A10 /* LaunchScreen.storyboard */; };
 		8D5EC928276A4B3700F36A10 /* HiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5EC927276A4B3700F36A10 /* HiViewController.swift */; };
+		8D5EC92B276F92FA00F36A10 /* UserLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5EC92A276F92FA00F36A10 /* UserLogin.swift */; };
+		8D5EC92D276F96D700F36A10 /* PersonInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5EC92C276F96D700F36A10 /* PersonInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		8D5EC91F276A44F000F36A10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D5EC921276A44F000F36A10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D5EC927276A4B3700F36A10 /* HiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiViewController.swift; sourceTree = "<group>"; };
+		8D5EC92A276F92FA00F36A10 /* UserLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLogin.swift; sourceTree = "<group>"; };
+		8D5EC92C276F96D700F36A10 /* PersonInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 		8D5EC912276A44EA00F36A10 /* LoginApp */ = {
 			isa = PBXGroup;
 			children = (
+				8D5EC929276F929B00F36A10 /* Models */,
 				8D5EC913276A44EA00F36A10 /* AppDelegate.swift */,
 				8D5EC915276A44EA00F36A10 /* SceneDelegate.swift */,
 				8D5EC917276A44EA00F36A10 /* ViewController.swift */,
@@ -68,6 +73,15 @@
 				8D5EC921276A44F000F36A10 /* Info.plist */,
 			);
 			path = LoginApp;
+			sourceTree = "<group>";
+		};
+		8D5EC929276F929B00F36A10 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8D5EC92A276F92FA00F36A10 /* UserLogin.swift */,
+				8D5EC92C276F96D700F36A10 /* PersonInfo.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,8 +156,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D5EC918276A44EA00F36A10 /* ViewController.swift in Sources */,
+				8D5EC92B276F92FA00F36A10 /* UserLogin.swift in Sources */,
 				8D5EC928276A4B3700F36A10 /* HiViewController.swift in Sources */,
 				8D5EC914276A44EA00F36A10 /* AppDelegate.swift in Sources */,
+				8D5EC92D276F96D700F36A10 /* PersonInfo.swift in Sources */,
 				8D5EC916276A44EA00F36A10 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
