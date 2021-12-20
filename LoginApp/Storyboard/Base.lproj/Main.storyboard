@@ -86,7 +86,7 @@
         <!--HiViewController-->
         <scene sceneID="dqU-TX-AQJ">
             <objects>
-                <viewController title="HiViewController" modalPresentationStyle="overFullScreen" id="Pie-YP-ThF" customClass="HiViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="HiViewController" modalPresentationStyle="fullScreen" id="Pie-YP-ThF" customClass="HiViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KbP-ee-Dhf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
