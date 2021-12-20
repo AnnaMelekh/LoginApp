@@ -16,5 +16,8 @@ class AboutViewController: UIViewController {
         name.text = "Name: " + userAnna.person.name
         age.text = "Age: " + userAnna.person.age
     }
-    
+    @IBAction func unwind(for segue: UIStoryboardSegue) {
+        
+    }
+
 }

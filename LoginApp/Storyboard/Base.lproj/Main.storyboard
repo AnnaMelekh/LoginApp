@@ -240,8 +240,11 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sRX-2c-ZNR">
-                                        <rect key="frame" x="97" y="398.5" width="46" height="30"/>
-                                        <state key="normal" title="Button"/>
+                                        <rect key="frame" x="97.5" y="398.5" width="45" height="30"/>
+                                        <state key="normal" title="Назад"/>
+                                        <connections>
+                                            <segue destination="zHS-gQ-gx5" kind="unwind" unwindAction="unwindFor:" id="jkf-e4-7iY"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -256,6 +259,7 @@
                     <tabBarItem key="tabBarItem" title="Info" id="bZb-GV-Jl2"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uzo-S2-esZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="zHS-gQ-gx5" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1571" y="781"/>
         </scene>
