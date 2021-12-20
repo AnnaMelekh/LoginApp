@@ -23,6 +23,8 @@ class ViewController: UIViewController {
             welcomeVC.name = textUser.text ?? ""
             }
         }
+        
+        tabBarController.modalPresentationStyle = .fullScreen
     }
             
 
